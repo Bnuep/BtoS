@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+#sel{background-image:url(images/makeup/sel.png);position:absolute;top:10%;left:15%;width:520px;height:350px;z-index:100;}
+#main{position:absolute;width:560px;height:240px;padding:2px;}
+#pic_area{}
+#pic_upload{position:absolute;}
+#sel_pic{position:absolute;font-size:23px;color:#000 ; top:100px;margin-left:180px;}
+#select_pic{position:absolute;margin-left:320px; top:100px;}
+#btn{margin-top:50px;}
+#up,#next,#select_pic,#sure,#upload,#close{background-image:url(images/btn.jpg);height:30px;width:75px;font-size:20px;color:#fff;font-weight:bold;}
+#up{position:absolute;margin-top:130px;margin-left:25%;}
+#next{margin-left:33%;margin-top:130px;position:absolute;}
+#upload{position:absolute;width:50px;height:30px;margin-top:20px;margin-left:10px;}
+#sure{bottom:20px;right:20px;position:absolute;}
+#close{width:39px;margin-top:15px;margin-left:460px;}
+.pic{margin-left:10%;width:635px;height:431px;background-image:url(images/makeup/bg.png);}
+#radio{margin-top:10px;position:absolute;top:130px;margin-left:180px;}
+#btn_style{background-position:1% 1%;font-size:12px;height:24px;width:75px;background-image:url(images/btn.jpg);color:#fff;}

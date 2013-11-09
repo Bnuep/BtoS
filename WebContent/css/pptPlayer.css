@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+#next,#prev {
+	position: absolute;
+	top:50px;
+	left:80px;
+	z-index: 100;
+	width: 100px;
+	height: 100px;
+	border: 0 none;
+}
+#prev { margin-top:5px;	background:url(images/index/pre.png) no-repeat;}
+#next {margin-top:300px;	background:url(images/index/next.png) no-repeat;}

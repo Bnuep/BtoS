@@ -1,0 +1,23 @@
+div
+{
+border: none;
+}
+#main{margin-left:10%;width:635px;height:431px;background-image:url(images/makeup/bg.png);}
+#main_div{position:absolute;padding:5px;width:650px;height:450px;left:20%;top:10%;}
+.tittle{position:absolute;font-size:23px;color:#000 ; top:100px;margin-left:70px;}
+.content{position:absolute;font-size:23px;color:#000 ; top:60px;margin-left:40px;}
+.cot{margin:250px 0 0 260px;position:absolute;width:172px;}
+.select{position:absolute;font-size:23px;color:#000 ; top:50px;}
+.step3_up{top:270px;left:150px;position:absolute;width:182px;}
+.bm{margin-top:-36%;margin-left:250px;}
+.point{position:absolute;font-size:23px;color:#fff ; margin-left:50px;}
+.tittle_set{top:100px;left:100px;}
+.up{margin:160px 280px;posisition:absolute;width:182px;align:right;color:#fff;}
+.btn_set{margin-left:5px;margin-top:-4px;}
+#done{left:280px;top:200px;position:absolute;}
+#next{background-position:1% 1%;font-size:20px;height:26px;font-weight:bold;width:78px;background-image:url(images/btn.jpg);color:#fff;}
+.next{font-size:12px;height:24px;color:#fff;}
+.step3{margin:35px 252px;posisition:absolute;width:182px;align:right;}
+.step4{margin:100px 0 0 100px;posisition:absolute;width:480px;}
+#new{background-position:1% 1%;font-size:20px;height:28px;font-weight:bold;width:110px;background-image:url(images/btn.jpg);color:#fff;}
+#com_up{position:absolute;left:280px;top:105px;font-size:20px;height:26px;font-weight:bold;width:80px;background-image:url(images/btn.jpg);color:#fff;}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bnuz.entity">
+<class name="PPT" table="ppt_table">
+<id name="tid" column="tid">
+<generator class="identity"/>
+</id>
+<property name="title"/>
+<many-to-one name="user" outer-join="true" class="User" column="uid" />
+<set name="pages" inverse="true" order-by="pid asc">
+<key column="tid"/>
+<one-to-many class="Page"/>
+</set>
+</class>
+</hibernate-mapping>

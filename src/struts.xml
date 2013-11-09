@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+
+ 
+	<constant name="struts.i18n.encoding" value="UTF-8"/>	
+		
+	<package name="default" extends="struts-default">
+		<!-- 登录action -->
+        <action name="loginAct" class="loginAction">
+            <result name="loginfail">/content/logerror.jsp</result>
+            <result name="loginsuccess">welcome.jsp</result>
+            <result name="error">/content/error.jsp</result>
+		</action>
+		
+		<action name="pptsetAct" class="pptsetAction">
+			<result name="next">makeup.jsp</result>
+			<result name="error">/content/error.jsp</result>
+		</action>
+		
+		<action name="pagesetAct" class="pagesetAction">
+			<result name="next">complete.jsp</result>
+			<result name="error">/content/error.jsp</result>
+		</action>
+		
+		<action name="loadAct" class="loadAction">
+			<result name="success">complete.jsp</result>
+			<result name="error">/content/error.jsp</result>
+		</action>
+		
+		<action name="completeAct" class="completeAction">
+			<result name="success">index.jsp</result>
+		</action>
+		
+		
+    </package>
+    
+
+</struts>

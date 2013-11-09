@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">	
+	<!-- 登录action -->
+	<bean id="myServiceImpl" 
+		class="com.bnuz.service.impl.MyServiceImpl">
+	</bean>
+	<bean id="loginAction" class="com.bnuz.action.LoginAction"
+		scope="prototype">
+		<property name="ims" ref="myServiceImpl"/>
+	</bean>	
+	
+	<bean id="pptLoadServiceImpl" 
+		class="com.bnuz.service.impl.PPTLoadServiceImpl">
+	</bean>
+	<bean id="loadAction" class="com.bnuz.action.LoadAction"
+		scope="prototype">
+		<property name="opl" ref="pptLoadServiceImpl"/>
+	</bean>
+	
+	<bean id="pagesetAction" class="com.bnuz.action.PageSetAction"
+		scope="prototype">
+	</bean>
+	<bean id="pptsetAction" class="com.bnuz.action.PPTSetAction"
+		scope="prototype">
+	</bean>
+	
+	<bean id="pptGetServiceImpl" 
+		class="com.bnuz.service.impl.PPTGetServiceImpl">
+	</bean>
+	<bean id="completeAction" class="com.bnuz.action.CompleteAction"
+		scope="prototype">
+		<property name="ipg" ref="pptGetServiceImpl"/>
+	</bean>			
+	
+</beans>

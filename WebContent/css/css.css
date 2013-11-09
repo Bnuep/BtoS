@@ -1,0 +1,69 @@
+ol,ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	width:160px;
+	height:365px;;
+	margin-top:50px;
+	margin-left:8px;
+}
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #A42D00;
+	padding: 1px 0;
+}
+#menu {
+	position: absolute;
+	heigth:400px;
+	top:20px;
+	left:30px;
+	background:url(images/lan-bg.png) no-repeat;
+	border:1px solid silver;
+	
+}
+li ul {
+position: absolute;
+display: none;
+}
+ul li {
+position:relative;
+}
+#menu ul li a {
+	height: 32px;
+	width: 145px;
+	display: inline-block;
+	background: url(images/lan.png);
+	text-decoration: none;
+	font-size: 22px;
+	font-weight:bold;
+	color: #444;
+	padding: 3px;
+	line-height:30px;
+	text-align:center;
+}
+#menu ul li a:hover{
+	color: #0066FF ;
+}
+#menu ul li:hover ul li a:hover{color:red;}
+#menu ul li:hover ul {display:block;left:140px;top:-50px;position:absolute;} 
+#menu ul li:hover ul li a {
+	font-size:18px;
+	height:30px;width: 130px; 
+	background-image:url(images/lang-bg.png);
+	line-height:30px;
+	display:block;
+	color:#444; 
+	text-align:center;
+	padding:2px;
+}
+li:hover ul,li.over ul{
+display:block;
+}
+
+
+.panel{height:70px;display:none;}
+.photo a{position:absolute;display:block;}
+.photo a:hover{text-decoration:none}
+.photo a span {display:none;cursor:hand;text-align:right;font:bold 12px/30px Verdana, Arial;}
+.photo a:hover span{width:85px;height:25px;margin:0 2px;background:#000;display:block;position:absolute;bottom:0;left:0;color:#fff;filter:alpha(opacity=40);-moz-opacity:0.5;opacity:0.4;}

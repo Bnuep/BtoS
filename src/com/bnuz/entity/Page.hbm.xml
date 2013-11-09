@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bnuz.entity">
+<class name="Page" table="page_table">
+<id name="pid" column="pid">
+<generator class="identity"/>
+</id>
+<property name="titlepage"/>
+<property name="contentpage"/>
+<property name="bgroundpage"/>
+<property name="modelpage"/>
+<many-to-one name="imagepage" column="imagepageid" unique="true" class="Imagepage"/>
+<many-to-one name="ppt" outer-join="true" class="PPT" column="tid" />
+</class>
+</hibernate-mapping>
