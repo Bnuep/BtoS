@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+#makeup{position:absolue;padding:0;width:100%;height:100%;margin-left:10%;}
+#mainDiv{}
+.title{width:800px;height:50px;left:100px;background:silver;position:absolute;margin:0 auto;text-align:center;}
+.cot{position:absolute;float:left;}
+.pic{position:absolute;float:left;}

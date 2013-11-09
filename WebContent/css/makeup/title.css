@@ -1,6 +1,0 @@
-@CHARSET "UTF-8";
-#theme{background-image:url(images/tit.jpg);width:600px;height:390px;margin-left:20%;}
-#themeDiv{position:absolute;padding:5px;}
-.title{margin-left:180px;;margin-top:130px;}
-.makeup{margin-left:350px;position:absolute;margin-top:-50px;}
-#next{position:absolute;top:105px;background-position:1% 1%;font-size:20px;height:26px;font-weight:bold;width:78px;background-image:url(images/btn.jpg);color:#fff;}
