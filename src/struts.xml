@@ -30,8 +30,15 @@
 			<result name="error">/content/error.jsp</result>
 		</action>
 		
+		<action name="pptgetAct" class="pptgetAction">
+		</action>
+		
+		<action name="viewpptAct" class="viewpptAction">
+		   <result name="success">index.jsp</result>
+		</action>
+		
 		<action name="completeAct" class="completeAction">
-			<result name="success">index.jsp</result>
+			<result name="success">finish.jsp</result>
 		</action>
 		
 		
