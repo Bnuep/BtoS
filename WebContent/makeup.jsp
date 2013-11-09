@@ -3,8 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>多媒体制作</title>
-<link rel="stylesheet" href="css/bg.css" type="text/css"/>
+<link rel="stylesheet" href="css/makeup/bg.css" type="text/css"/>
 <style>
 .pop{position:absolute;left:50%;top:10%;width:300px;height:100px;background:#eee;border:1px solid #ccc;z-index:1;} 
 .pop_head{position:absolute;height:20px;background:#ccc} 
@@ -63,10 +62,10 @@ window.location = url;
 </div>
 </s:form> 
 <!-- 主页面布局-->
-<div id="main">
+<div id="title">
 	<div id="main_div">
 	<s:form action="pagesetAct">
-		<div class="tittle"><font face="华文行楷">标题：</font><input name="tittlepage" type="text" onchange='bg(this)'onclick="goedit(this)"/>
+		<div class="title"><input name="tittlepage" type="text" onchange='bg(this)'onclick="goedit(this)"/>
 		<input class="btn_set" type="button" href="javascript:void(0);" value="设置" onclick="show('pop')"/></div>
 		<div class="up">
 		<input id="next" type="submit" value="下一步"/>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>多媒体制作</title>
-<link rel="stylesheet" href="css/bg.css" type="text/css"/>
+<link rel="stylesheet" href="css/makeup/bg.css" type="text/css"/>
 <style>
 #btn_btn{
 background-image: url("images/btn.jpg");
@@ -20,13 +20,13 @@ function goedit(thisobject){
 </script>
 </head>
 <body>
-<div id="main">
+<div id="step3">
 	<div id="main_div">
 	<s:form action="pagesetAct">
 		<div class="select"><font face="华文行楷">选择图片
 		</font>
 		<div>
-		<img width="150" height="150" src="source/bground/tree.jpg" name="x1" style="cursor:pointer;"  onclick="javascript:window.open(this.src);" style="cursor:pointer;"/>
+		<img width="140" height="140" src="source/bground/tree.jpg" name="x1" style="cursor:pointer;"  onclick="javascript:window.open(this.src);" style="cursor:pointer;"/>
 		<select name="bgroundpage" onChange="document.x1.src=options[selectedIndex].value">
 			<option value="source/bground/tree.jpg">选择图片1</option>
 			<option value="source/bground/bg2.jpg">选择图片2</option>
@@ -36,7 +36,7 @@ function goedit(thisobject){
 		</div>
 		<div class="bm"><font face="华文行楷">选择模版
 		</font><br>
-		<img width="150" height="150" src="source/model/tree.jpg" name="x2" style="cursor:pointer;"  onclick="javascript:window.open(this.src);" style="cursor:pointer;"/>
+		<img width="140" height="140" src="source/model/tree.jpg" name="x2" style="cursor:pointer;"  onclick="javascript:window.open(this.src);" style="cursor:pointer;"/>
 		<select name="modelpage" onChange="document.x2.src=options[selectedIndex].value">
 			<option value="source/model/tree.jpg">选择模版1</option>
 			<option value="source/model/bg2.jpg">选择模版2</option>

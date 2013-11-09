@@ -10,20 +10,20 @@
 	<bean id="loginAction" class="com.bnuz.action.LoginAction"
 		scope="prototype">
 		<property name="ims" ref="myServiceImpl"/>
-	</bean>	
-	
+	</bean>
+		
 	<bean id="pptLoadServiceImpl" 
 		class="com.bnuz.service.impl.PPTLoadServiceImpl">
 	</bean>
-	<bean id="loadAction" class="com.bnuz.action.LoadAction"
+	<bean id="pptloadAction" class="com.bnuz.action.PPTLoadAction"
+		scope="prototype">
+		<property name="ipl" ref="pptLoadServiceImpl"/>
+	</bean>
+	<bean id="pageloadAction" class="com.bnuz.action.PageLoadAction"
 		scope="prototype">
 		<property name="opl" ref="pptLoadServiceImpl"/>
 	</bean>
-	
 	<bean id="pagesetAction" class="com.bnuz.action.PageSetAction"
-		scope="prototype">
-	</bean>
-	<bean id="pptsetAction" class="com.bnuz.action.PPTSetAction"
 		scope="prototype">
 	</bean>
 	

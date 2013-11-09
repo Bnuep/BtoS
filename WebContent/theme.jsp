@@ -5,21 +5,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="css/bg.css" type="text/css"/>
+<link rel="stylesheet" href="css/makeup/title.css" type="text/css"/>
 <script type="text/javascript">
 function go(){
-	window.location.reload('makeup.jsp');
+	window.location.reload('make.jsp');
 }
 </script>
 </head>
 <body>
-<div id="main">
-	<div id="main_div">
-	<s:form action="pptloadAct">
-		<div class="tittle"><font face="华文行楷">主题：</font><input name="tittle" type="text" /></div>
-		<div class="up">
-		<input id="next" style="position:absolute;" type="submit" value="创建" />
-		</div>
+<div id="theme">
+	<div id="themeDiv">
+	<s:form action="pptloadAct" method="post">
+		<div class="title"><input name="title" type="text" /></div>
+		<div class="makeup"><input id="next" type="submit" value="创建" /></div>
 	</s:form>
 	</div>
 	

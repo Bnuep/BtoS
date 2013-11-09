@@ -1,0 +1,31 @@
+ol,ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	width:640px;
+	height:28px;
+}
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #A42D00;
+	padding: 1px 0;
+}
+#menu {background-image:url(images/menu/menu1.png);font-family: helvetica; font-weight:bold;position: absolute; width:99%; height:28px; font-size:14px; color:#999;}
+#menu ul { list-style-type:none; }
+#menu ul li { float:left; position: relative;width:105px;line-height:1px;}
+#menu ul li a {display:block; text-decoration:none; text-align:center; color: #0066FF;}
+#menu ul li a:hover {display:block;color:#2798e7;} 
+#menu ul li ul {display: none;}
+#menu ul li:hover ul {display: block; position: absolute;}
+#menu ul li:hover ul li{display:block;margin-top:25px;margin-left:15px;position:absolute;}
+#menu ul li:hover ul li a {font-weight:none;border-right:none;display:block; color:#0066FF;line-height:2px;font-size:14px;width:80px;height:10px; text-align:left; }
+#menu ul li:hover ul li a:hover {display:block;color:#2798e7;}
+
+
+
+.panel{height:70px;display:none;}
+.photo a{position:absolute;display:block;}
+.photo a:hover{text-decoration:none}
+.photo a span {display:none;cursor:hand;text-align:right;font:bold 12px/30px Verdana, Arial;}
+.photo a:hover span{width:85px;height:25px;margin:0 2px;background:#000;display:block;position:absolute;bottom:0;left:0;color:#fff;filter:alpha(opacity=40);-moz-opacity:0.5;opacity:0.4;}

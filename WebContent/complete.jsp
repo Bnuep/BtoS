@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>多媒体制作</title>
-<link rel="stylesheet" href="css/bg.css" type="text/css"/>
+<link rel="stylesheet" href="css/makeup/bg.css" type="text/css"/>
 <style>
 .new{margin-left:170px;top:132px;}
 #pop{position:absolute;line-height:30px;margin-left:80px;margin-top:-20px;padding:2px;width:90px;height:45px;display:none;background:url(images/call/col.png);z-index:1;}
@@ -38,20 +38,18 @@ function cc(tt) {
 </head>
 <body>
 <div id="pop"></div>
-<div id="main">
+<div id="complete">
 	<div id="main_div">
-	<div class="step4">
-	<button id="com_up" style="position:absolute;" alt="返回上层" onmouseover="cc(this)"  onmouseout="document.all.pop.style.display='none'"onclick="window.location.reload('makeup_step4.jsp')">返回</button>
+		<button id="back" alt="返回上层" onmouseover="cc(this)"  onmouseout="document.all.pop.style.display='none'"onclick="window.location.reload('makeup_step4.jsp')">返回</button>
 		<s:form action="pageloadAct">
-		<input id="next" alt="先保存" onmouseover="cc(this)"  onmouseout="document.all.pop.style.display='none'" type="submit" style="position:absolute;" value="保存"  />
+		<input id="save" alt="先保存" onmouseover="cc(this)"  onmouseout="document.all.pop.style.display='none'" type="submit" value="保存"  />
 		</s:form>
 		<s:form action="completeAct">
-		<button id="next" alt="开始制作" style="margin-left:90px;position:absolute;" onmouseover="cc(this)" onmouseout="document.all.pop.style.display='none'">完成</button><br/><br/>
+		<button id="done" alt="开始制作" onmouseover="cc(this)" onmouseout="document.all.pop.style.display='none'">完成</button><br/><br/>
 		</s:form>
 		<input id="new" type="button" value="新建一页" class="new1"onclick="window.location.reload('makeup.jsp')"/>
 	</div>
 	</div>
-	
-</div>
+
 </body>
 </html>

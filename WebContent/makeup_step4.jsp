@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/upload.css" rel="stylesheet" type="text/css" />
+<link href="css/makeup/pic.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-mouseover.js"></script>
 <script type="text/javascript">
 function show(o){ 
@@ -25,8 +25,8 @@ function imagepageset(imageselect){
 *{margin:0;padding:1px;list-style-type:none;}
 img{border:0;}
 .demo{margin:20px auto 0 15px;width:480px;height:200px;border:1px solid silver;background-image:url(images/pic.png);}
-ul#menu li{float:left;position:relative;width:60px;height:60px;padding:0 5px;margin-left:5px;margin-top:10px;}
-ul#menu li img{position:absolute;width:60px;overflow:hidden;}
+.demo img{float:left;position:relative;width:60px;height:60px;padding:0 5px;margin-left:5px;margin-top:10px;}
+
 </style>
 </head>
 <body>
@@ -48,7 +48,6 @@ ul#menu li img{position:absolute;width:60px;overflow:hidden;}
 	<div class="pic">
 			<s:form action="pagesetAct">
 			<input id="imageselect" name="imagepage"  type="hidden" value="">
-			<div id="sel_pic"><font>插入图片：</font></div> 
 			<input id="select_pic" type="button" value="select" onclick="show('sel');" />
 			<div id="radio">
 			<input type="radio" name="location" value="left" checked="checked"/>内容左边
