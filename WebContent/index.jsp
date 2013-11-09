@@ -28,10 +28,10 @@ function pageChange(i){
 <body>
 <div style="">
 <%int i = 1; %>
-<iframe id="ds"width=100%  height=500px src="<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("tittle") + "/" + i +".html" %>" frameborder=0></iframe></div>
+<iframe id="ds"width=100%  height=500px src="<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("istitle") + "/" + i +".html" %>" frameborder=0></iframe></div>
 <div style="">
-	<a id="prev" onclick="<%i=i-1; %>" href="javascript:change('<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("tittle")  + "/" + i +".html" %>')"></a>
-    <a id="next" onclick="<%i=i+1; %>" href="javascript:change('<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("tittle")  + "/" + i +".html" %>')"></a>
+	<a id="prev" onclick="<%i=i-1; %>" href="javascript:change('<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("istitle")  + "/" + i +".html" %>')"></a>
+    <a id="next" onclick="<%i=i+1; %>" href="javascript:change('<%=request.getContextPath() + "/content/" + session.getAttribute("username") + "/" + session.getAttribute("istitle")  + "/" + i +".html" %>')"></a>
 </div>
 </body>
 </html> 
